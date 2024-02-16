@@ -1,0 +1,128 @@
+body{
+	background: #e2e2e2;
+}
+
+ a.active {
+  /*  border: 2px solid blue;  */
+  border-radius: 1px;
+  background-color: blue; 
+  padding-left: 5px;
+  color: white;
+  }
+
+.bg-primary{
+	background: #009688 !important;
+}
+
+.sign_up_title{
+	text-transform: uppercase;
+	font-weight:bold;
+	font-size:25px;
+	
+}
+
+.dp{
+	background:url("../Gallery1/Photo11.jpg");
+	/*background:url("https://avatars.githubusercontent.com/u/88203724?v=4");*/
+	background-size:cover;
+	width:28rem;
+	height:28rem;
+	border-radius: 50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin:0px auto;
+}
+
+
+@media only screen and (max-width:600px){
+	.sidebar{
+		display:none;
+		width: 100% !important;
+		background:#fff;
+		height:100vh;
+		position: fixed;
+		padding-top: 25px;
+	}
+	
+	.my-card{
+		z-index: 0;
+	}
+	.sidebar{
+		z-index:1;
+	}
+	.content{
+		margin-left:0% !important;
+	}
+	.box_container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.boxes{
+		margin-top:25px;
+	}
+	a.active {
+		/*  border: 2px solid blue;  */
+		border-radius: 1px;
+
+		color: white;
+	}
+	.alert_box{
+		z-index: 1;
+		width: 100%;
+		left:0;
+	}
+
+}
+
+        
+   
+
+
+@keyframes progress-pf82op {
+   100% {
+      inset: 0;
+   }
+}
+
+.lebel-margin{
+	margin-right: 10px;
+}
+
+
+
+.tox-tinymce{
+	width:100%;
+}
+
+
+.profile-photo{
+	width: 45px;
+	height: 45px;
+	object-fit:cover;
+	border-radius:50%;
+}
+.table-div{
+	display: flex;
+	align-items: center;
+	margin-top:50px;
+	flex-direction: column;
+}
+.tablesss{
+	width: 80%;
+}
+.tablesss td{
+  text-align: left;
+}
+.tablesss th{
+	text-align:right;
+}
+
+.home_page{
+	margin:0px 0px;
+	height:100%;
+	width: 100%;
+	
+}
+
