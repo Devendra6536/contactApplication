@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.smart.entities.PortalTime;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 public class PortalTimeFetingController {
 	

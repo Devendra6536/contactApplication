@@ -16,7 +16,8 @@ import com.smart.dao.TestDataRepository;
 import com.smart.entities.TestData;
 import com.smart.entities.TestMetaDataInformation;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 public class FakeDataGenerationController {
 	

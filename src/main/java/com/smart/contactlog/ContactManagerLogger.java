@@ -21,7 +21,9 @@ public class ContactManagerLogger {
 			String formatedDate = date.format(formater);
 
 			//System.out.println("Today date is " + formatedDate);
-			String filePath = "/home/team/devendra/JavaBackendDevelopment/SpringbootProjects/contactmanager/logs/contactManager.log";
+			
+			//String filePath = "/home/team/devendra/JavaBackendDevelopment/SpringbootProjects/contactmanager/logs/contactManager.log";
+			String filePath = System.getProperty("user.dir")+"/logs/contactManager.log";
 			try (FileWriter logger = new FileWriter(filePath, true);
 
 					PrintWriter printWriter = new PrintWriter(logger);) {
