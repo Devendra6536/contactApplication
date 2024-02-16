@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.hibernate.annotations.ColumnDefault;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -45,6 +46,7 @@ public class User{
 	private String passwd;
 	
 	private String role;
+	@ColumnDefault("true")
 	private boolean enabled;
 	private String imageurl;
 	@Column(length = 500)
