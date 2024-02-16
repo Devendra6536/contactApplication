@@ -29,7 +29,6 @@ public class PortalTimeFetingController {
 		    Process process = builder.start();
 		   
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-			BufferedReader reader1 = new BufferedReader(new InputStreamReader(process.getErrorStream()));
 			String lines = null;
 			System.out.println("\n\n\n\n\n");
 			String ss = "";

@@ -47,6 +47,7 @@ import com.smart.helper.SendEmail;
 import jakarta.servlet.http.HttpSession;
 
 //@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin( origins = "https://contactapplication-production.up.railway.app/")
 @Controller
 public class SmartContactController {
 
