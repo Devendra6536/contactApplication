@@ -76,7 +76,6 @@ elif output_format == "xlxs":
 elif output_format == "txt":
     df.to_csv(f"{output_file_Directory}/{filename}.txt", index=False, sep=delimiter, header=False)
 elif output_format == "custom":
-    # Handle custom delimiters or other formats
     custom_delimiter = input("Enter custom delimiter: ")
     df.to_csv(f"{output_file_Directory}/{filename}.{output_format}", index=False, sep=custom_delimiter)
     print(f"Output saved to '{output_file_Directory}/{filename}.{output_format}'")
