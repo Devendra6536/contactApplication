@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.smart.dao.TestDataRepository;
 import com.smart.entities.TestData;
@@ -120,7 +121,7 @@ public class FakeDataGenerationController {
 	
 	
 	
-	@PostMapping("/generate_TestData")
+	@RequestMapping("/generate_TestData")
 	public ResponseEntity<List<TestMetaDataInformation>> generateTestData(@RequestBody List<TestMetaDataInformation> dataInformation) {
 		
 		
@@ -177,6 +178,12 @@ public class FakeDataGenerationController {
 		}
 		
 		return ResponseEntity.of(Optional.of(dataInformation));
+	}
+
+	@RequestMapping("/FakeDataGeneration")
+	public String fakeDataGeneration() {
+		
+		return "FakeDataGeneration";
 	}
 	
 }
