@@ -180,10 +180,6 @@ public class FakeDataGenerationController {
 		return ResponseEntity.of(Optional.of(dataInformation));
 	}
 
-	@RequestMapping("/FakeDataGeneration")
-	public String fakeDataGeneration() {
-		
-		return "FakeDataGeneration";
-	}
+	
 	
 }

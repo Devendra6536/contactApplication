@@ -546,6 +546,10 @@ public class SmartContactController {
 	}
 	
 	
-	
+	@RequestMapping("/FakeDataGeneration")
+	public String fakeDataGeneration() {
+		
+		return "FakeDataGeneration";
+	}
 
 }
